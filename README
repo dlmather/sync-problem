@@ -3,6 +3,4 @@
 - `docker-compose build && docker-compose-up`
 - `./generate.py > seed`
 - `./seed-go-server.sh <seed`
-- `./seed-elasticsearch.sh <seed`
-- `curl localhost:9200`
 - `curl localhost:8080/hello`
