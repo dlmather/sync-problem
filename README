@@ -1,6 +1,6 @@
 # Setup
 - `make`
-- `docker-compose build && docker-compose-up`
+- `docker-compose build && docker-compose up`
 - `./generate.py > seed`
 - `./seed-go-server.sh <seed`
 - `curl localhost:8080/hello`
