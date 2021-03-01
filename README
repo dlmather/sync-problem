@@ -4,3 +4,15 @@
 - `./generate.py > seed`
 - `./seed-go-server.sh <seed`
 - `curl localhost:8080/hello`
+
+# Problem Description
+Our setup above starts a Go server listening on port :8080, generates a large seed file and uploads the records in the seed file to the Golang server in bulk.
+In the course of uploading however, the buggy bulk upload method corrupts some number of the records uploaded to the server!
+Our task is to query the server's HTTP API (GET /record) and discover which records are corrupted, and issue updates via said API (PUT /record) to repair the records.
+At the end of fixing these records, we'd like to output the number of corrupted records that we repaired.
+
+This can be done in any programming or scripting language, but the emphasis is on trying to create a clean production-grade solution as opposed to a hacky one-off.
+
+# Bonus Round (if there is extra time)
+- `curl localhost:8080/hardmode`
+- Now, some percentage of the update requests we issue to the server will hang before failing, how can we properly circumvent this issue and still fix the corrupted records in a timely manner?
