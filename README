@@ -1,9 +1,9 @@
 # Setup
 - go build
 - ./sync-problem
+- `curl localhost:8080/hello`
 - `./generate.py > seed`
 - `./seed-go-server.sh <seed`
-- `curl localhost:8080/hello`
 
 # Problem Description
 Our setup above starts a Go server listening on port :8080, generates a large seed file and uploads the records in the seed file to the Golang server in bulk.
